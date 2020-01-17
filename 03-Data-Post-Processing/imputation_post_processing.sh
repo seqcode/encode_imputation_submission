@@ -5,7 +5,7 @@ set -e
 # @param: IMPUTE_LIST: list of prefix that needs to be imputed. 
 
 # Example Usage: 
-# sh encode_imputed_data_aggregation.sh /storage/home/z/zxz147/group/projects/encode_challenge/training_data/bed_dir/imputed_dir/blind_test_dir 1 /storage/home/z/zxz147/group/projects/encode_challenge/training_data/bed_dir/imputed_dir/scripts/test_impute_list.txt 
+# sh imputation_post_processing.sh /storage/home/z/zxz147/group/projects/encode_challenge/training_data/bed_dir/imputed_dir/blind_test_dir 1 /storage/home/z/zxz147/group/projects/encode_challenge/training_data/bed_dir/imputed_dir/scripts/test_impute_list.txt 
 
 WORK_DIR=$1
 PHASE=$2

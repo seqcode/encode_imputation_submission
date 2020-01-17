@@ -78,3 +78,13 @@ For post processing, we wrote one generalized shell script to help us do the wor
     * Phase 03: Combine the seperated .wig files into .bigwig files, which is the final version to submit. 
 
 * Since this script is wrote specifically for the use under Penn State ICS-ACI cluster, users may need to change the parameters, set-up and configurations accordingly. 
+* Different Parameters Explained: 
+    * Parameter 01: WORK_DIR - The parent folder contains the result imputed from both cell direction and mark direction, as described in **Blind-Test Data Imputation - Step 3 and 4**
+    * Parameter 02: PHASE - The index of phase that users would like to run. 
+    * Parameter 03: IMPUTE_LIST - List of data needed for post-processing. 
+
+* Sample Usage: ```sh imputation_post_processing.sh /path_to_work_dir/blind_test_dir/ 1 /path_to_impute_list/impute_list.txt```
+
+#### 2. blind_test_list.txt
+
+This .txt file is the actual ```IMPUTE_LIST``` we used for running our post-processing script as described in the above step. 
